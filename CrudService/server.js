@@ -15,8 +15,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 const router    = express.Router();
-const Mesroutes = require('./routes/cruds')
-app.use('/cruds', Mesroutes)
+const Mesroutes = require('./routes/crud')
+app.use('/crud', Mesroutes)
 
 app.listen(3000, () => console.log('OK pour server bi!!!'))
 module.exports = router;
