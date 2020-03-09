@@ -7,8 +7,9 @@ define(['../exploitation'], function (exploitation) {
   data = JSON.parse(JSON.stringify(data))
   console.log(data)
   //console.log(data)
-  const entite = new mongoose.Schema(
+  const tab=process.env.entite;
+  const  tab= new mongoose.Schema(
     data
   )
-  module.exports = mongoose.model(entite, entite)
+  module.exports = mongoose.model(tab, tab)
 })
