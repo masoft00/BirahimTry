@@ -1,0 +1,8 @@
+{
+    _id: entites._id,
+    email: entites.email,
+    prenom: entites.prenom,
+    nom: entites.nom,
+    adresse: entites.adresse,
+    dateNaissance: entites.dateNaissance
+  }

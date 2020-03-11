@@ -1,0 +1,10 @@
+{
+  prenom: req.body.prenom,
+  nom: req.body.nom,
+  adresse: req.body.adresse,
+  dateNaissance: req.body.dateNaissance,
+  email: req.body.email,
+  password: hash,
+}
+
+

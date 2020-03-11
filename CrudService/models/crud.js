@@ -4,5 +4,5 @@ define(['../exploitation'], function (exploitation) {
   let data   = exploitation.data
   data       = JSON.parse(JSON.stringify(data))
  const  Crud = new mongoose.Schema(data)
-  module.exports = mongoose.model('Crud', Crud)
+  module.exports = mongoose.model('crud', Crud)
 })

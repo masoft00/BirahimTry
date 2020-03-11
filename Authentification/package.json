@@ -1,0 +1,26 @@
+{
+  "name": "authentification",
+  "version": "1.0.0",
+  "description": "C'est une API d'authentification en nodejs avec JWT",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mor SECK",
+  "license": "ISC",
+  "dependencies": {
+    "amd-loader": "0.0.8",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "js-yaml": "^3.13.1",
+    "jsonwebtoken": "^8.5.1",
+    "load-yaml-file": "^0.2.0",
+    "mongoose": "^5.9.4",
+    "nodemon": "^2.0.2",
+    "validator": "^12.2.0",
+    "yamljs": "^0.3.0"
+  }
+}
