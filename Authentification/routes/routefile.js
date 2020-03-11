@@ -9,7 +9,6 @@ const loadYamlFile = require('load-yaml-file')
 loadYamlFile('./routes/inscriptionData.yml').then(inscriptionData => {
 
   //Ici le route pour s'inscrire
-  console.log(inscriptionData.prenom)
   router.post('/inscrire', function (req, res) {
     bcrypt.hash(req.body.password, 10, function (err, hash) {
       if (err) {
@@ -38,8 +37,8 @@ loadYamlFile('./routes/inscriptionData.yml').then(inscriptionData => {
   })
 })
 
-//Route pour se loger
 
+//Route pour se loger
 loadYamlFile('./routes/loginData.yml').then(loginData => {
 router.post('/login', function (req, res) {
   entites

@@ -10,12 +10,6 @@ const js_yaml    = require('js-yaml')
 const fichier    = fs.readFileSync('./config/conf.yml')
 const data       = js_yaml.safeLoad(fichier)
 
-
-
-
-
-
-
 //connexion à la base de données
 mongoose.connect('mongodb://localhost/' + data.DatabaseName);
 app.use(bodyParser.urlencoded({ extended: false }));
