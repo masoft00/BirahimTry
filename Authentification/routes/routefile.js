@@ -126,7 +126,7 @@ router.patch('/:id', getUser, async (req, res) => {
 
 // Modifier un utilisateur
 router.patch('/update/:id', getUser, (req, res) => {
-  res.json(res.enetite)
+  res.json(res.entite)
 })
 
 // Supprimer un utilisateur
