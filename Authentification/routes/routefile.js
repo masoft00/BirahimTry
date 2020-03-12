@@ -5,8 +5,10 @@ const bcrypt       = require('bcrypt')
 const jwt          = require('jsonwebtoken')
 const entites      = require('../models/filemodels.js')
 const loadYamlFile = require('load-yaml-file')
+const fs = require('fs')
 
   //Ici le route pour s'inscrire
+
   router.post('/inscrire', function (req, res) {
     bcrypt.hash(req.body.password, 10, function (err, hash) {
       if (err) {
