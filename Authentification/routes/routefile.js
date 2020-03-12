@@ -5,8 +5,6 @@ const bcrypt       = require('bcrypt')
 const jwt          = require('jsonwebtoken')
 const entites      = require('../models/filemodels.js')
 const loadYamlFile = require('load-yaml-file')
- 
-loadYamlFile('./routes/inscriptionData.yml').then(inscriptionData => {
 
   //Ici le route pour s'inscrire
   router.post('/inscrire', function (req, res) {
@@ -35,11 +33,9 @@ loadYamlFile('./routes/inscriptionData.yml').then(inscriptionData => {
       }
     })
   })
-})
 
 
 //Route pour se loger
-loadYamlFile('./routes/loginData.yml').then(loginData => {
 router.post('/login', function (req, res) {
   entites
     .findOne({ email: req.body.email })
@@ -83,7 +79,6 @@ router.post('/login', function (req, res) {
         error: error
       })
     })
-})
 })
 
 
