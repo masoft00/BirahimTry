@@ -45,7 +45,6 @@ router.post('/', async(req, res) =>{
 router.patch('/:id',getLine, async(req, res,err) =>{
     if (req.body.prenom != null) {
         res.crud.data.prenom = req.body.prenom
-        console.log(res.crud.data.prenom);
     }
     
     if (req.body.nom != null) {
